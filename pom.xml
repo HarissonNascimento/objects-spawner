@@ -6,12 +6,32 @@
 
   <groupId>com.github.harissonnascimento</groupId>
   <artifactId>objects-spawner</artifactId>
-  <description>This project aims to generate objects to be used in application testing</description>
   <version>0.0.1</version>
+  <packaging>jar</packaging>
+
+  <name>objectes-spawner</name>
+  <description>This project aims to generate objects to be used in application testing</description>
+  <url>https://github.com/HarissonNascimento/objects-spawner</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://github.com/HarissonNascimento/objects-spawner/blob/main/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/HarissonNascimento/objects-spawner</url>
+    <connection>scm:git:git://github.com/HarissonNascimento/objects-spawner</connection>
+    <developerConnection>scm:git:git@github.com:HarissonNascimento/objects-spawner.git</developerConnection>
+  </scm>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.sourceEncoding>UTF-8</maven.compiler.sourceEncoding>
+    <lombok.version>1.18.16</lombok.version>
   </properties>
 
   <dependencies>
@@ -19,7 +39,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.16</version>
+      <version>${lombok.version}</version>
     </dependency>
 
   </dependencies>
@@ -27,8 +47,12 @@
   <developers>
 
     <developer>
+      <id>harissonnascimento</id>
       <name>Harisson do Nascimento Pires</name>
       <email>harisson.nas@gmail.com</email>
+      <roles>
+        <role>developer</role>
+      </roles>
     </developer>
 
   </developers>

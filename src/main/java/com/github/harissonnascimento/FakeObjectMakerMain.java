@@ -9,9 +9,11 @@ public class FakeObjectMakerMain {
   public static void main(String[] args) {
 
     var employee = Instantiator.generateClass(Employee.class);
+
     var person2 = Instantiator.generateClass(Person.class);
 
     var person = Instantiator.generateClass(Person.class);
+
     person.setStringTest("Modified value");
 
     System.out.println(employee);
